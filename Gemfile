@@ -11,6 +11,7 @@ gem 'mongoid'
 gem 'bson'
 gem 'bson_ext'
 gem 'backbone-on-rails'
+gem "twitter-bootstrap-rails"
 
 gem 'twilio-ruby'
 gem 'resque'
