@@ -2,11 +2,13 @@
 # All this logic will automatically be available in application.js.
 # You can use CoffeeScript in this file: http://jashkenas.github.com/coffee-script/
 window.SurveySystem =
-  Models: {}
-  Collections: {}
-  Views: {}
-  Routers: {}
-  init: -> alert 'Hello from Backbone!'
+	Models: {}
+	Collections: {}
+	Views: {}
+	Routers: {}
+	init: -> 
 
 $(document).ready ->
-  SurveySystem.init()
+	SurveySystem.init()
+	AppRouter = new MainRouter
+	Backbone.history.start()

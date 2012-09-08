@@ -1,3 +1,84 @@
 // Place all the styles related to the main controller here.
 // They will automatically be included in application.css.
 // You can use Sass (SCSS) here: http://sass-lang.com/
+
+@import "compass/reset";
+@import "compass/css3";
+
+
+.clear
+{
+	clear: both;
+	height: 0;
+}
+.container
+{
+	height: 100%;
+	width: 960px;
+	margin: 0 auto;
+	position: relative;
+}
+
+
+body
+{
+	background: url("use_your_illusion.png");
+	position: absolute;
+	top: 0;
+	bottom: 0;
+	left: 0;
+	right: 0;
+	font-family: Balthazar;
+	overflow: hidden;
+}
+.circle
+{
+	position: fixed;
+	background: red;
+	width: 100px;
+	height: 100px;
+	@include border-radius(100px); 
+	&.user
+	{
+		background: green;
+		width: 200px;
+		height: 200px;
+		left: 200px;
+		top: 150px;
+		@include border-radius(200px); 
+	}
+	&.packages
+	{
+		background: yellow;
+		width: 250px;
+		height: 250px;
+		left: 800px;
+		top: 350px;
+		@include border-radius(250px); 
+	}
+	&.features
+	{
+		right: 200px;
+		bottom: 150px;
+	}
+	&.servey
+	{
+		background: green;
+		width: 400px;
+		height: 400px;
+		left: 50%;
+		top: 50%;
+		margin-left: -200px;
+		margin-top: -200px;
+		@include border-radius(400px); 
+	}
+	&.seeResults
+	{
+		background: green;
+		width: 200px;
+		height: 200px;
+		left: 200px;
+		bottom: 150px;
+		@include border-radius(200px); 
+	}
+}
